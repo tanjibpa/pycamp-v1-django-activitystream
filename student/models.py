@@ -1,4 +1,6 @@
 from django.db import models
+from crum import get_current_user
+
 
 class Student(models.Model):
     name = models.CharField(max_length=80)
